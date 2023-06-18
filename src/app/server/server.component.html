@@ -1,0 +1,9 @@
+<p>server works! {{number}} {{ !getState() }}</p>
+<input type="text" [(ngModel)]="number">
+<p>{{number}}</p>
+<input type="text" (input)="onUpdateServerName($event)">
+<button 
+[disabled]="!state"
+(click)="changeState()"
+>{{message}}
+</button>
