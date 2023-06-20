@@ -1,0 +1,50 @@
+/* Estilos para el <nav> */
+nav {
+    background-color: #fae4ca;
+    padding: 10px;
+    border: 3px solid #f28e0b;
+    border-radius: 20px;
+    margin: 10px 20px;
+  }
+
+  /* Estilos para los enlaces <a> */
+  nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #fbcc9a;
+    color: #623F33;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  /* Estilos para el hover de los enlaces <a> */
+  nav a:hover {
+    border-color: #f28e0b;
+    background-color: #F5D7AF;
+    color: #623F33;
+    animation: shake 0.5s ease-in-out;
+  }
+
+  /* Animación shake */
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

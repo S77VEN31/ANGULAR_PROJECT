@@ -5,11 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 // Components imports
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
+import { ServerComponent } from './styleguide/components/course/server/server.component';
+import { NavBarComponent } from './styleguide/components/headers/nav-bar/nav-bar.component';
+import { RecipesComponent } from './styleguide/components/pages/recipes/recipes.component';
+import { IngredientsComponent } from './styleguide/components/pages/ingredients/ingredients.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
+    NavBarComponent,
+    RecipesComponent,
+    IngredientsComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,
