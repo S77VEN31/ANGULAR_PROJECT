@@ -1,9 +1,17 @@
-<p>server works! {{number}} {{ !getState() }}</p>
-<input type="text" [(ngModel)]="number">
-<p>{{number}}</p>
-<input type="text" (input)="onUpdateServerName($event)">
+<H2>
+  {{ serverName ? serverName : DEFAULT_SERVER_NAME }}
+</H2>
+<input [placeholder]="PLACEHOLDER" type="text" [(ngModel)]="serverName" />
 <button 
-[disabled]="!state"
-(click)="changeState()"
->{{message}}
+    [ngClass]="[getButtonClass(), 'button3']" 
+    [disabled]="!serverName" 
+    (click)="registerServerName()"
+>
+  {{ REGISTER_SERVER }}
 </button>
+
+<ul>
+    <li *ngFor="let server of servers; let i = index">
+        {{ server + ' ' + (i+1) }}
+    </li>
+</ul>

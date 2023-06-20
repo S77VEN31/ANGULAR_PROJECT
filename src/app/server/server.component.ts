@@ -6,21 +6,40 @@ import { Component } from '@angular/core';
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent {
-  number: number = 10;
-  state: boolean = false;
-  message: string = 'EL servidor esta apagado';
-  onUpdateServerName(event: Event) {
-    this.changeState((<HTMLInputElement>event.target).value)
+  
+  /*
+  constructor() { 
+    interface texts {
+      REGISTER_SERVER: string
+      SERVER_NAME: string
+    }
+    let {REGISTER_SERVER,SERVER_NAME}: texts = this.data;
+
+    console.log(REGISTER_SERVER,SERVER_NAME);
+  } 
+  */
+  data = {
+    DEFAULT_SERVER_NAME: 'Nombre del servidor',
+    REGISTER_SERVER: 'Registrar servidor',
+    PLACEHOLDER: 'Ingrese el servidor',
+  };
+
+  // Enumerables
+  DEFAULT_SERVER_NAME: string = this.data.DEFAULT_SERVER_NAME;
+  REGISTER_SERVER: string = this.data.REGISTER_SERVER;
+  PLACEHOLDER: string = this.data.PLACEHOLDER;
+  // Variables
+  serverName: string = '';
+  servers: string[] = ['Costa Rica', 'Costa Rica'];
+
+  registerServerName() {
+    this.servers.push(this.serverName);
+    this.serverName = ''
   }
-  getState(state=this.state) {
-    return state;
-  };
-  changeState(message: string ='EL servidor esta encendido') {
-    this.message = message;
-  };
-  ngOnInit() {
-    setTimeout(() => {
-      this.state = true;
-    }, 2000);
+
+
+
+  getButtonClass(): string {
+    return this.serverName ? 'button1' : 'button2';
   }
 }
