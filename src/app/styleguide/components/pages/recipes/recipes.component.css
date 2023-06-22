@@ -1,0 +1,7 @@
+.content-main-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px 30px;
+  overflow: visible;
+}

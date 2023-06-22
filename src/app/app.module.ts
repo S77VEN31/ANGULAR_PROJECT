@@ -9,6 +9,9 @@ import { ServerComponent } from "./styleguide/components/course/server/server.co
 import { NavBarComponent } from "./styleguide/components/headers/nav-bar/nav-bar.component";
 import { RecipesComponent } from "./styleguide/components/pages/recipes/recipes.component";
 import { IngredientsComponent } from "./styleguide/components/pages/ingredients/ingredients.component";
+import { TableContainerComponent } from './styleguide/components/tables/table-container/table-container.component';
+import { TableIngredientsComponent } from './styleguide/components/tables/table-ingredients/table-ingredients.component';
+import { TableRecipesComponent } from './styleguide/components/tables/table-recipes/table-recipes.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { IngredientsComponent } from "./styleguide/components/pages/ingredients/
     NavBarComponent,
     RecipesComponent,
     IngredientsComponent,
-    ServerComponent
+    ServerComponent,
+    TableContainerComponent,
+    TableIngredientsComponent,
+    TableRecipesComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

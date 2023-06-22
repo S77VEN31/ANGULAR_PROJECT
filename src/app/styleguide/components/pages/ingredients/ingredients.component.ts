@@ -1,5 +1,6 @@
+// Angular imports
 import { Component } from "@angular/core";
-
+// Enumerables imports
 import { Ingredient } from "./ingredient";
 @Component({
   selector: "app-ingredients",

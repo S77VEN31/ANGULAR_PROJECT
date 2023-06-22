@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let recipe of recipes; let i = index">
+    <div [ngClass]="['name-description-container']">
+      <a>
+        {{ i + 1 + ". " + recipe.name + ":" }}
+      </a>
+      <a>
+        {{ recipe.description }}
+      </a>
+    </div>
+    <img [src]="recipe.imagePath" alt="recipe image" />
+  </li>
+</ul>

@@ -1,15 +1,5 @@
 <div [ngClass]="['content-main-container']">
-  <div [ngClass]="['table-title']">
-    {{ SHOPPING_LIST }}
-  </div>
-  <ul>
-    <li *ngFor="let ingredient of ingredients; let i = index">
-      <a>
-        {{ i + 1 + ". " + ingredient.name }}
-      </a>
-      <a>
-        {{ ingredient.quantity }}
-      </a>
-    </li>
-  </ul>
+  <app-table-container [title]="SHOPPING_LIST">
+    <app-table-ingredients [ingredients]="ingredients"></app-table-ingredients>
+  </app-table-container>
 </div>

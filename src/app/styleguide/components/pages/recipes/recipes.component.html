@@ -1,1 +1,5 @@
-<p>recipes works!</p>
+<div [ngClass]="['content-main-container']">
+  <app-table-container [title]="RECIPES_LIST">
+    <app-table-recipes [recipes]="recipes"></app-table-recipes>
+  </app-table-container>
+</div>

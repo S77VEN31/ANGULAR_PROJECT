@@ -1,0 +1,11 @@
+.table-title {
+  display: flex;
+  justify-content: center;
+  border: 3px solid #f28e0b;
+  background-color: #fae4ca;
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: #623f33;
+  text-align: center;
+}
