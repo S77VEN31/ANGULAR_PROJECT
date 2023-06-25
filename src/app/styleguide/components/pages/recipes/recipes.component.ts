@@ -2,6 +2,7 @@
 import { Component } from "@angular/core";
 // Enumerables imports
 import { Recipe } from "./recipe";
+
 @Component({
   selector: "app-recipes",
   templateUrl: "./recipes.component.html",

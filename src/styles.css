@@ -15,10 +15,20 @@ body * {
   background-color: transparent;
 }
 
+:root {
+  --primary-brown: #623f33;
+  --primary-orange: #f28e0b;
+  --primary-light-background: #fae4ca;
+  --secondary-light-background: #fbcc9a;
+  --light-hover-background: #f5d7af;
+  --accept-green: #42d15c;
+  --deny-red: #e54b4b;
+}
+
 app-root {
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow: auto;
-  background-color: #fae4ca;
+  background-color: var(--primary-light-background);
 }

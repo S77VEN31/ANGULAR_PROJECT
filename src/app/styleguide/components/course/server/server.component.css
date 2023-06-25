@@ -1,9 +1,9 @@
 .button1 {
-  background-color: forestgreen;
+  background-color: var(--accept-green);
 }
 
 .button2 {
-  background-color: red;
+  background-color: var(--deny-red);
 }
 
 .button3 {

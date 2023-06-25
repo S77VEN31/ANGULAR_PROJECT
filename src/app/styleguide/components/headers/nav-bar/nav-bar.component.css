@@ -1,7 +1,7 @@
 nav {
-  background-color: #fbcc9a;
+  background-color: var(--secondary-light-background);
   padding: 10px;
-  border: 3px solid #f28e0b;
+  border: 3px solid var(--primary-brown);
   border-radius: 20px;
   margin: 10px 20px;
   display: flex;
@@ -15,20 +15,19 @@ nav a {
   text-transform: uppercase;
   padding: 10px 20px;
   margin-right: 10px;
-  background-color: #fae4ca;
-  color: #623f33;
-  border: 2px solid #623f33;
+  background-color: var(--primary-light-background);
+  color: var(--primary-brown);
+  border: 2px solid var(--primary-brown);
   transition: border-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
   text-decoration: none;
   border-radius: 8px;
   font-family: "Dancing Script", cursive;
-
 }
 
 nav a:hover {
-  border-color: #f28e0b;
-  background-color: #f5d7af;
+  background-color: var(--primary-brown);
+  color: var(--primary-light-background);
   animation: shake 0.5s ease-in-out;
 }
 

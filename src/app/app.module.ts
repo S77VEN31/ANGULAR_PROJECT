@@ -12,6 +12,7 @@ import { IngredientsComponent } from "./styleguide/components/pages/ingredients/
 import { TableContainerComponent } from './styleguide/components/tables/table-container/table-container.component';
 import { TableIngredientsComponent } from './styleguide/components/tables/table-ingredients/table-ingredients.component';
 import { TableRecipesComponent } from './styleguide/components/tables/table-recipes/table-recipes.component';
+import { SimpleTextButtonComponent } from './styleguide/components/buttons/simple-text-button/simple-text-button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TableRecipesComponent } from './styleguide/components/tables/table-reci
     ServerComponent,
     TableContainerComponent,
     TableIngredientsComponent,
-    TableRecipesComponent
+    TableRecipesComponent,
+    SimpleTextButtonComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

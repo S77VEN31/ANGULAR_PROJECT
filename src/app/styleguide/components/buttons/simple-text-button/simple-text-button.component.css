@@ -1,0 +1,18 @@
+.accept {
+  background-color: var(--accept-green);
+}
+
+.deny {
+  background-color: var(--deny-red);
+}
+
+.default-button {
+  color: var(--primary-light-background);
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 40px;
+  padding: 8px 16px;
+  border: 3px solid var(--primary-brown);
+}
