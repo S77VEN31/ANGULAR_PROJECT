@@ -1,0 +1,72 @@
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--secondary-light-background);
+  border-radius: 16px;
+}
+.inputs-title {
+  display: flex;
+  justify-content: center;
+  border: 3px solid var(--primary-brown);
+  background-color: var(--primary-light-background);
+  text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: var(--primary-brown);
+  text-align: center;
+}
+.inputs-and-buttons-container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 20%;
+  gap: 16px;
+}
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+input {
+  display: flex;
+  color: var(--primary-brown);
+  border: 3px solid var(--primary-brown);
+  outline: none; /* Quita el borde al enfocar */
+  padding: 10px;
+  background-color: var(--primary-light-background);
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+input:focus {
+  box-shadow: 0 0 5px var(--primary-orange);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  background-color: var(--primary-orange); /* Establece el color de fondo */
+  color: white; /* Establece el color del texto */
+
+  border-radius: 0; /* Establece el radio de borde deseado */
+}
+
+/* Estilos para el botón de aumento */
+input[type="number"]::-webkit-inner-spin-button {
+  background-color: var(
+    --primary-orange
+  ); /* Cambia el color de fondo del botón de aumento */
+  color: white; /* Cambia el color del texto del botón de aumento */
+}
+
+/* Estilos para el botón de disminución */
+input[type="number"]::-webkit-outer-spin-button {
+  background-color: var(
+    --primary-orange
+  ); /* Cambia el color de fondo del botón de disminución */
+  color: white; /* Cambia el color del texto del botón de disminución */
+}

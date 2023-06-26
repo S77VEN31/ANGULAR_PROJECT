@@ -1,13 +1,12 @@
 <div [ngClass]="['content-main-container']">
   <app-table-container [title]="SHOPPING_LIST">
     <app-table-ingredients [ingredients]="ingredients"></app-table-ingredients>
-    <app-simple-text-button
-      [text]="ADD_INGREDIENT"
-      buttonType="accept"
-    ></app-simple-text-button>
-    <app-simple-text-button
-      [text]="DELETE_INGREDIENT"
-      buttonType="deny"
-    ></app-simple-text-button>
   </app-table-container>
+  <app-insert-table-row
+    [title]="props.TITLE"
+    [addButton]="props.ADD_BUTTON"
+    [cancelButton]="props.CANCEL_BUTTON"
+    [inputsData]="inputsData"
+    (addRow)="addRow($event)"
+  ></app-insert-table-row>
 </div>

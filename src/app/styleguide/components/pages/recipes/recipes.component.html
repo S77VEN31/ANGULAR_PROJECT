@@ -2,4 +2,11 @@
   <app-table-container [title]="RECIPES_LIST">
     <app-table-recipes [recipes]="recipes"></app-table-recipes>
   </app-table-container>
+  <app-insert-table-row
+    [title]="props.TITLE"
+    [addButton]="props.ADD_BUTTON"
+    [cancelButton]="props.CANCEL_BUTTON"
+    [inputsData]="inputsData"
+    (addRow)="addRow($event)"
+  ></app-insert-table-row>
 </div>

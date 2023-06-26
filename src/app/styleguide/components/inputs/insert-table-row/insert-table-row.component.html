@@ -1,0 +1,26 @@
+<div [ngClass]="['inputs-wrapper']">
+  <H2 [ngClass]="['inputs-title']">
+    {{ title }}
+  </H2>
+  <div [ngClass]="['inputs-and-buttons-container']">
+    <div [ngClass]="['inputs-container']">
+      <input
+        [(ngModel)]="inputValues[i]"
+        [placeholder]="input.PLACE_HOLDER"
+        [type]="input.INPUT_TYPE"
+        *ngFor="let input of inputsData; let i = index"
+      />
+    </div>
+    <div [ngClass]="['buttons-container']">
+      <app-simple-text-button
+        (click)="onPress()"
+        [text]="addButton"
+        buttonType="accept"
+      ></app-simple-text-button>
+      <app-simple-text-button
+        [text]="cancelButton"
+        buttonType="deny"
+      ></app-simple-text-button>
+    </div>
+  </div>
+</div>

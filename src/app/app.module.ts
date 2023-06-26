@@ -9,10 +9,11 @@ import { ServerComponent } from "./styleguide/components/course/server/server.co
 import { NavBarComponent } from "./styleguide/components/headers/nav-bar/nav-bar.component";
 import { RecipesComponent } from "./styleguide/components/pages/recipes/recipes.component";
 import { IngredientsComponent } from "./styleguide/components/pages/ingredients/ingredients.component";
-import { TableContainerComponent } from './styleguide/components/tables/table-container/table-container.component';
-import { TableIngredientsComponent } from './styleguide/components/tables/table-ingredients/table-ingredients.component';
-import { TableRecipesComponent } from './styleguide/components/tables/table-recipes/table-recipes.component';
-import { SimpleTextButtonComponent } from './styleguide/components/buttons/simple-text-button/simple-text-button.component';
+import { TableContainerComponent } from "./styleguide/components/tables/table-container/table-container.component";
+import { TableIngredientsComponent } from "./styleguide/components/tables/table-ingredients/table-ingredients.component";
+import { TableRecipesComponent } from "./styleguide/components/tables/table-recipes/table-recipes.component";
+import { SimpleTextButtonComponent } from "./styleguide/components/buttons/simple-text-button/simple-text-button.component";
+import { InsertTableRowComponent } from "./styleguide/components/inputs/insert-table-row/insert-table-row.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SimpleTextButtonComponent } from './styleguide/components/buttons/simpl
     TableContainerComponent,
     TableIngredientsComponent,
     TableRecipesComponent,
-    SimpleTextButtonComponent
+    SimpleTextButtonComponent,
+    InsertTableRowComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

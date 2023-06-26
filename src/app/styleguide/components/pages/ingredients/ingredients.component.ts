@@ -9,13 +9,22 @@ import { Ingredient } from "./ingredient";
   styleUrls: ["./ingredients.component.css"]
 })
 export class IngredientsComponent {
-  data = {
-    SHOPPING_LIST: "Shopping List",
-    ADD_INGREDIENT: "Add Ingredient",
-    DELETE_INGREDIENT: "Delete Ingredient"
+  props = {
+    TITLE: "Add ingredients",
+    ADD_BUTTON: "Add Ingredient",
+    CANCEL_BUTTON: "Cancel",
+    SHOPPING_LIST: "Shopping List"
   };
-  SHOPPING_LIST: string = this.data.SHOPPING_LIST;
-  ADD_INGREDIENT: string = this.data.ADD_INGREDIENT;
-  DELETE_INGREDIENT: string = this.data.DELETE_INGREDIENT;
+  inputsData = [
+    { PLACE_HOLDER: "Ingredient name", INPUT_TYPE: "text" },
+    { PLACE_HOLDER: "Ingredient amount", INPUT_TYPE: "number" }
+  ];
+  SHOPPING_LIST: string = this.props.SHOPPING_LIST;
   ingredients: Ingredient[] = Ingredient.ingredientFactory();
+  addNewIngredient(name: string, amount: string) {
+    this.ingredients.push(new Ingredient(name, amount));
+  }
+  addRow(event: Event) {
+    this.addNewIngredient(event[0].value, event[1].value);
+  }
 }
